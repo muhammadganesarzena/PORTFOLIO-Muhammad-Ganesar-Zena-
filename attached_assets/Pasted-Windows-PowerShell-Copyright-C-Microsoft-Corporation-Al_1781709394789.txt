@@ -1,0 +1,63 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\acer> cd portfolio
+cd : Cannot find path 'C:\Users\acer\portfolio' because it does not exist.
+At line:1 char:1
++ cd portfolio
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\acer\portfolio:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\acer> cd portfolio3
+PS C:\Users\acer\portfolio3> npm install
+npm warn deprecated recharts@2.15.4: 1.x and 2.x branches are no longer active. Bump to Recharts v3 to receive latest features and bugfixes. See https://github.com/recharts/recharts/wiki/3.0-migration-guide
+npm warn cleanup Failed to remove some directories [
+npm warn cleanup   [
+npm warn cleanup     '\\\\?\\C:\\Users\\acer\\portfolio3\\node_modules\\@types\\three',
+npm warn cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\Users\acer\portfolio3\node_modules\@types\three'] {
+npm warn cleanup       errno: -4048,
+npm warn cleanup       code: 'EPERM',
+npm warn cleanup       syscall: 'rmdir',
+npm warn cleanup       path: 'C:\\Users\\acer\\portfolio3\\node_modules\\@types\\three'
+npm warn cleanup     }
+npm warn cleanup   ],
+npm warn cleanup   [
+npm warn cleanup     '\\\\?\\C:\\Users\\acer\\portfolio3\\node_modules',
+npm warn cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\Users\acer\portfolio3\node_modules\@tanstack\react-query\build\codemods'] {
+npm warn cleanup       errno: -4048,
+npm warn cleanup       code: 'EPERM',
+npm warn cleanup       syscall: 'rmdir',
+npm warn cleanup       path: 'C:\\Users\\acer\\portfolio3\\node_modules\\@tanstack\\react-query\\build\\codemods'
+npm warn cleanup     }
+npm warn cleanup   ],
+npm warn cleanup   [
+npm warn cleanup     '\\\\?\\C:\\Users\\acer\\portfolio3\\node_modules\\stats-gl',
+npm warn cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\Users\acer\portfolio3\node_modules\stats-gl\node_modules\three'] {
+npm warn cleanup       errno: -4048,
+npm warn cleanup       code: 'EPERM',
+npm warn cleanup       syscall: 'rmdir',
+npm warn cleanup       path: 'C:\\Users\\acer\\portfolio3\\node_modules\\stats-gl\\node_modules\\three'
+npm warn cleanup     }
+npm warn cleanup   ]
+npm warn cleanup ]
+npm error code ENOTFOUND
+npm error syscall getaddrinfo
+npm error errno ENOTFOUND
+npm error network request to http://package-firewall.replit.local/npm/gsap/-/gsap-3.15.0.tgz failed, reason: getaddrinfo ENOTFOUND package-firewall.replit.local
+npm error network This is a problem related to network connectivity.
+npm error network In most cases you are behind a proxy or have bad network settings.
+npm error network
+npm error network If you are behind a proxy, please make sure that the
+npm error network 'proxy' config is set properly.  See: 'npm help config'
+npm error A complete log of this run can be found in: C:\Users\acer\AppData\Local\npm-cache\_logs\2026-06-17T15_14_04_928Z-debug-0.log
+PS C:\Users\acer\portfolio3> npm run dev
+
+> portfolio-ganesar-zena@1.0.0 dev
+> vite
+
+'vite' is not recognized as an internal or external command,
+operable program or batch file.
+PS C:\Users\acer\portfolio3>
